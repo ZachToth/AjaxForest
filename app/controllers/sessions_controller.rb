@@ -18,4 +18,12 @@ class SessionsController < ApplicationController
     redirect_to products_url, notice: "Logged out!"
   end
 
+  private 
+  def set_cart
+      @cart = Cart.find(session[:cart_id])
+  rescue ActiveRecord::RecordNotFound
+      @cart=Cart.create
+      session[:cart_id] = @cart.id
+  end
+
 end

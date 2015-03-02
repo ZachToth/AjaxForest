@@ -1,0 +1,10 @@
+
+<div id="cart">
+<% @carts.line_items.each do |item| %>
+<%= item.quantity %> &times; <%= item.product.name %><br>
+</div>
+<% end %>
+
+<%= link_to 'Edit', edit_cart_path %> |
+<%= link_to 'Back', carts_path %> |
+<%= link_to 'Back to Products', products_path %>

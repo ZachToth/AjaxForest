@@ -24,15 +24,36 @@
 
  #main {
     outline: black 1px solid;
-    margin-left: 17em;
     padding: 1em;
     background: white;
+    margin-right: 17em;
   }
+}
+
+#showcart {
+  float: right;
+  background: lightblue;
+  outline: black 1px solid;
+  width: 200px;
+  height: 200px;
+  display: none;
 }
 
 nav {
   outline: black 1px solid;
   float: left;
+  background: yellow;
+}
+
+#login {
+  outline: black 1px solid;
+  background: yellow;
+  float: right;
+}
+
+.resize {
+  width: 100px;
+  height: auto;
 }
 
 // #search_bar {
